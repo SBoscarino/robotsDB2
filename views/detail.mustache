@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="/stylesTwo.css" rel="stylesheet">
+    <title>Detail</title>
+  </head>
+  <body class="indexStyle">
+
+    <ul class="each">
+        <section class="boxOne">
+          <li class="img"><img src="{{avatar}}"><li>
+            <section class="totheright">
+            <li class="name">{{name}}</li>
+             <li> {{address.city}}, {{address.country}} || <p class="hireable">{{^company}}Available for hire!{{/company}}</p></li>
+             <li>{{email}} || {{phone}}</li>
+           </section>
+       </section>
+
+       <section class="boxTwo">
+         <div class="mini1">
+           <li><h3>Education</h3></li>
+            <li>{{university}}</li>
+          </div>
+        <div class="thatothermini">
+          <li><h3>Skills</h3></li>
+          <li class="column">{{skills}}</li>
+        </div>
+        </section>
+    </ul>
+
+  </body>
+</html>

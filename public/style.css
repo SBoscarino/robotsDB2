@@ -1,0 +1,36 @@
+
+body {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.each {
+  display:flex;
+  padding: 0;
+  margin: 0;
+  flex-flow: row;
+  flex-flow: wrap;
+}
+
+li {
+  border: pink 1px solid;
+  text-align: center;
+  list-style: none;
+  flex-basis: 24%;
+
+}
+
+.each li:hover {
+  background-color: pink;
+  color:black;
+}
+
+img {
+height: 30%;
+width: 30%;
+}
+
+.hireable {
+  color:red;
+}

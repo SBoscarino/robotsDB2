@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="/style.css" rel="stylesheet">
+    <title>Index</title>
+  </head>
+  <body class="indexStyle">
+    <h1>Index</h1>
+    <h3>Links:</h3>
+    <h4> <a href="http://localhost:3500/employed">Employed Robots</a></h4>
+    <h4> <a href="http://localhost:3500/unemployed">Unemployed Robots</a></h4>
+    <ul class="each">
+      {{#users}}
+        <li>
+          <p><img src="{{avatar}}"></p>
+          <p><a href="/detail/{{id}}">{{name}}</a></p>
+          <p class="hireable">{{^job}}Available for hire!{{/job}}</p>
+          <p>{{company}}</p>
+        </li>
+      {{/users}}
+    </ul>
+
+  </body>
+</html>
