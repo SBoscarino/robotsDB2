@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose')
 const data = require('./data');
 
-mongoose.Promist = global.Promise;
+mongoose.Promise = global.Promise;
 
 const app = express();
 
@@ -17,9 +17,9 @@ app.set('view engine', 'mustache');
 
 app.use(bodyParser.urlencoded({ extended : false }));
 
-app.use(require('/routes/routes.js'));
+app.use(require('./routes/routes.js'));
 
-let url = 'mongodb://localhost:27017/robotsData';
+let url = 'mongodb://localhost:27017/robotsdb2';
 
 mongoose.connect(url, { useMongoClient: true }).then(function(){console.log("connected to database for robotsdb2")});
 
